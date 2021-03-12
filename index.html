@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Front-end / Data-Attributes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="abas">
+        <button class="ativa"data-aba="entrar">Entrar</button>
+        <button data-aba="cadastrar">Cadastre-se</button>
+      </div>
+
+      <div class="conteudos">
+        <div data-conteudo="entrar">
+          <form class="form">
+            <input type="text" name="email" placeholder="Seu e-mail">
+            <input type="password" name="senha" placeholder="Sua senha">
+            <button>Entrar</button>
+          </form>
+        </div>
+
+      <div class="hide" data-conteudo="cadastrar">
+        <form class="form">
+        <input type="text" name="email" placeholder="Seu e-mail">
+        <input type="password" name="senha" placeholder="Sua senha">
+        <input type="password" name="senha" placeholder="Repita sua senha">
+        <button>Cadastrar</button>
+        </form>
+      </div>
+
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
